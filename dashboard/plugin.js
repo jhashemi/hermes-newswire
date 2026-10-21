@@ -146,13 +146,13 @@
         React.createElement(Row, {
           label: "Refresh interval",
           value:
-            settings.refresh_interval_minutes != null
-              ? settings.refresh_interval_minutes + " min"
+            settings.refresh_interval != null
+              ? settings.refresh_interval + " s"
               : "—",
         }),
         React.createElement(Row, {
-          label: "Max articles / source",
-          value: settings.max_articles_per_source != null ? settings.max_articles_per_source : "—",
+          label: "Max headlines kept",
+          value: settings.max_headlines != null ? settings.max_headlines : "—",
         })
       ),
       React.createElement(
